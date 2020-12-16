@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function GuessedWords(props) {
   return (
@@ -10,10 +10,10 @@ function GuessedWords(props) {
 }
 
 GuessedWords.propTypes = {
-  guessedWords: propTypes.arrayOf(
-    propTypes.shape({
-      gueesedWord: propTypes.string.isRequired,
-      letterMatchCount: propTypes.number.isRequired,
+  guessedWords: PropTypes.arrayOf(
+    PropTypes.shape({
+      gueesedWord: PropTypes.string.isRequired,
+      letterMatchCount: PropTypes.number.isRequired,
     })
   ).isRequired,
 };
